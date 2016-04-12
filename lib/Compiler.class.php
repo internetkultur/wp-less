@@ -133,7 +133,7 @@ class WPLessCompiler extends lessc
 
 			if ($css === null)
 			{
-                                if(defined('WP_DEBUG') && WP_DEBUG) {
+                                if(defined('LESS_SOURCEMAPS') && LESS_SOURCEMAPS) {
                                     $this->setOptions([
                                         'sourceMap'             => true,// whether to output a source map
                                         'sourceMapBasepath'     => get_template_directory(),
